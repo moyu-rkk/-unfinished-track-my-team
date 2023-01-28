@@ -1,5 +1,5 @@
-# [unfinished]track-my-team
-My first original tiny project - Track My Team
+# [unfinished]Track My Team
+My first original tiny project
 
 
 ## Project Background
