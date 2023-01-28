@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    background-color: #98C5E9;
+    color: #001838;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+#description {
+    margin: 3% auto;
+    max-width: 70%;
+}
+
+
+#description strong {
+    color: #EF03DD;
+}
+
+
+.title {
+    padding-top: 3%;
+}
+
+
+#level1 {
+    width: 50%;
+    border-radius: 0;
+    position: relative;
+    margin: auto;
+}
+
+
+#level2 {
+    width: 50%;
+    border-radius: 0;
+    position: relative;
+    margin: 0 auto 3%;
+}
+
+
+.add-btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    background: #ffffff;
+    color: #001838;
+    font-size: 20px;
+    padding: 5px 40px 5px 40px;
+    border: solid #001838 2px;
+    text-decoration: none;
+    margin-bottom: 5%;
+}
+
+
+.add-btn:hover {
+    background: #DDE6ED;
+    text-decoration: none;
+}
+
+
+.flex-container {
+    justify-content: space-evenly;
+}
+
+.container-left, .container-right {
+    padding: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.info-cards {
+    text-align: center;
+    width: 400px;
+    margin:20px auto 60px;
+    border-radius: 0;
+}
+
+
+@media screen and (max-width:400px) {
+    .info-cards {
+        width: 300px;
+    }
+}
+
+
+.league-name {
+    padding-bottom: 10px;
+}
+
+.fixture-date {
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+.upcoming-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upcoming-time p {
+    background-color: #DDE6ED;
+    padding: 0 3px;
+}
+
+.upcoming-time time {
+    font-weight: bold;
+}
+
+.result-board {
+    border-top: solid #43D5FC 4px;
+}
+
+.upcoming-board {
+    border-top: solid #EF03DD 4px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+}
+
+.score {
+    height: 40px;
+    font-size: 1.5rem;
+    background: #001838;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin: 20% auto;
+    width: 35px;
+}
+
+
+.team-info {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    padding: 10px;
+}
+
+.scoreboard, .result-first-team, .result-second-team {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+
+.container-bottom {
+    margin: 20px auto 40px;
+}
+
+#wg-football-standings {
+    width: 50%;
+    margin: 20px auto;
+    font-family: 'Red Hat Display', sans-serif;
+}

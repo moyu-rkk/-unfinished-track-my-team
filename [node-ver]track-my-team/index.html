@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Track My Team</title>
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Track My Team</h1>
+        <p id="description">Keep track of chosen team's <strong>fixtures</strong> and current <strong>position</strong>
+            in league.</p>
+    </div>
+
+    <div class="choose-teams container-fluid">
+        <form method="post">
+            <select class="form-select" id="level1">
+                <option value="" disabled selected>Pick League</option>
+                <option value="Premier League">Premier League</option>
+                <option value="Bundesliga">Bundesliga</option>
+            </select>
+
+            <select class="form-select" id="level2" name="teamName">
+                <option value="" disabled selected>Pick Team</option>
+            </select>
+            <script type="text/javascript" src="/dropdown.js"></script>
+
+            <button type="submit" class="add-btn">Add</button>
+        </form>
+    </div>
+
+    <div class="row flex-container">
+        <div class="col-lg-6 col-sm-12 container-left">
+            <h2>UPCOMING FIXTURES</h2>
+            <ul class="list-group info-cards">
+
+                <li class="list-group-item upcoming-board">
+
+                    <div class="fixture-date" id="upcoming-date">Sun 22 Jan</div>
+                    <div class="league-name" id="upcoming-league">Premier League</div>
+
+                    <div class="scoreboard">
+                        <div class="upcoming-first-team team-info">
+                            <div class="logo">
+                                <img src="https://media.api-sports.io/football/teams/50.png" class="logo" alt="">
+                            </div>
+                            <div class="upcoming-first-team-name"><strong>Man City</strong></div>
+                        </div>
+
+                        <div class="upcoming-time">
+                            <p class="time"><strong>20:00</strong></p>
+                            <p class="timezone">GMT</p>
+                        </div>
+
+                        <div class="upcoming-second-team team-info">
+                            <div class="logo">
+                                <img src="https://media-3.api-sports.io/football/teams/39.png" class="logo" alt="">
+                            </div>
+                            <div class="upcoming-second-team-name"><strong>Wolves</strong></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item upcoming-board">More Fixtures</li>
+                <li class="list-group-item upcoming-board">More Fixtures</li>
+            </ul>
+        </div>
+
+        <div class="col-lg-6 col-sm-12 container-right">
+            <h2>LATEST RESULTS</h2>
+            <ul class="list-group info-cards">
+
+                <li class="list-group-item result-board">
+
+                    <div class="fixture-date" id="result-date">Sun 22 Jan</div>
+                    <div class="league-name" id="result-league">Premier League</div>
+
+                    <div class="scoreboard">
+                        <div class="result-first-team">
+
+                            <div class="team-info">
+                                <div class="logo" id="result-first-logo">
+                                    <img src="https://media.api-sports.io/football/teams/50.png" class="logo" alt="">
+                                </div>
+                                <div class="result-first-team-name"><strong>Man City</strong></div>
+                            </div>
+
+                            <div class="result-first-team-goals score">3</div>
+                        </div>
+
+                        <div class="result-second-team">
+
+                            <div class="result-first-team-goals score">0</div>
+
+                            <div class="team-info">
+                                <div class="logo" id="result-second-logo">
+                                    <img src="https://media-3.api-sports.io/football/teams/39.png" class="logo" alt="">
+                                </div>
+                                <div class="result-second-team-name"><strong>Wolves</strong></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <li class="list-group-item result-board">More Fixtures</li>
+                <li class="list-group-item result-board">More Fixtures</li>
+            </ul>
+        </div>
+
+        <div class="col container-bottom">
+            <h2>STANDINGS</h2>
+
+            <div>
+                <a href="#" class="_link" data-league="39">Premier League</a>
+                <a href="#" class="_link" data-league="78">Bundesliga</a>
+            </div>
+
+            <div id="wg-api-football-standings" data-host="v3.football.api-sports.io" data-key=""
+                data-league="39" data-team="" data-season="2022" data-theme="" data-show-errors="false"
+                data-show-logos="true" class="wg_loader">
+            </div>
+            <script type="module" src="https://widgets.api-sports.io/2.0.3/widgets.js">
+            </script>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<!-- <script>
+    document.addEventListener('click', function (event) {
+
+        if (!event.target.matches('._link')) return
+        event.preventDefault()
+
+        let id = event.target.getAttribute('data-league')
+
+        let standings = document.getElementById('wg-api-football-standings')
+            standings.innerHTML = ''
+            standings.setAttribute('data-league', id);
+
+        window.document.dispatchEvent(new Event("DOMContentLoaded", {
+          bubbles: true,
+          cancelable: true
+        }));
+    })
+</script> -->

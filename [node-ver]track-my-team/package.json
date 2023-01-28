@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2"
+  },
+  "name": "track-my-team",
+  "version": "1.0.0",
+  "description": "Track your teams' upcoming fixtures, results and current position in league.",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rubinkk",
+  "license": "ISC"
+}
