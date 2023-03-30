@@ -1,4 +1,4 @@
-# [unfinished]Track My Team
+# Track My Team
 My first original tiny project
 
 
@@ -23,16 +23,5 @@ All the things need to be done seems quite simple:
 6. Save user chosen options to localStorage
 
 
-However I had problems transfering data.
-At first, I used **raw JavaScript** and **node** to build this project but I coundn't import the data returned by API into the JS file controling step 5.
 
-I've created a local JSON file to store data using fs but couldn't import it into the JS file.
-
-Then I refactored it using **React** but this time I coundn't even get the option sent back from frontend, even the standing widget provided by API-FOOTBALL crashed.
-
-I tried hooks and useEffect to connect step 1~4 but since I'm a newbie who's not familiar with React/Axios/fetch I failed again.
-
-And I spent too much time making a cascading dropbox in React.
-
-
-Anyway, I'll finish it when I level up ASAP.
+I've completed this challenge on Mar 27, 2023!
